@@ -3,8 +3,6 @@ var helpers = require('@turf/helpers');
 var meta = require('@turf/meta');
 var turfBBox = require('@turf/bbox').default;
 var featureEach = meta.featureEach;
-var coordEach = meta.coordEach;
-var polygon = helpers.polygon;
 var featureCollection = helpers.featureCollection;
 
 /**
@@ -19,7 +17,7 @@ var featureCollection = helpers.featureCollection;
  * var tree = geojsonRbush();
  */
 function geojsonRbush(maxEntries) {
-    var tree = rbush(maxEntries);
+    var tree = new rbush(maxEntries);
     /**
      * [insert](https://github.com/mourner/rbush#data-format)
      *

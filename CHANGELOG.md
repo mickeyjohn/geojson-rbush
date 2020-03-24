@@ -1,6 +1,9 @@
 
 # Changelog
 
+## 3.1.3 - 2020-03-24
+- Make it work with rbush 3.0.x
+
 ## 3.1.0 - 2018-02-05
 
 - Improve coverage testing to 100%
